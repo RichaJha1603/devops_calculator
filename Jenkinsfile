@@ -8,9 +8,7 @@ environment{
      }
     agent any
   
-   tools {
-        maven "Maven"
-    }
+  
     
     
     stages {
