@@ -71,7 +71,7 @@ stage('Executing Rundeck Jobs'){
                      script{
                            step([$class: "RundeckNotifier",
                                  includeRundeckLogs:true,
-                                 jobId: "3bf2209a-9885-4c00-b1f1-d23f573b9b66",
+                                 jobId: "df5f6cf6-98f4-4c4c-9e37-36b89396b41a",
                                  rundeckInstance: "Rundeck",
                                  shouldFailTheBuild:true,
                                  shouldWaitForRundeckJob:true,
