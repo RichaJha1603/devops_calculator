@@ -19,6 +19,7 @@ environment{
       steps {
         git 'https://github.com/RichaJha1603/devops_calculator.git'
       }
+	 }
 
         stage ('Compile Stage') {
 
