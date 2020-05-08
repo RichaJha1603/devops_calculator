@@ -66,7 +66,20 @@ environment{
 
            
                                  
-
+stage('Executing Rundeck Jobs'){
+                  steps{
+                     script{
+                           step([$class: "RundeckNotifier",
+                                 includeRundeckLogs:true,
+                                 jobId: "3bf2209a-9885-4c00-b1f1-d23f573b9b66",
+                                 rundeckInstance: "Rundeck",
+                                 shouldFailTheBuild:true,
+                                 shouldWaitForRundeckJob:true,
+                                 tailLog:true])
+                             }
+                      }
+                }
+                                 
      
   
 
