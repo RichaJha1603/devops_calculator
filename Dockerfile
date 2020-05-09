@@ -2,8 +2,8 @@ FROM openjdk:8-alpine
 
 RUN apk update
 RUN apk add  maven
-COPY pom.xml /usr/local/calculator/pom.xml
-COPY src /usr/local/calculator/src
-WORKDIR /usr/local/calculator
+COPY pom.xml /usr/local/Calculator/pom.xml
+COPY src /usr/local/Calculator/src
+WORKDIR /usr/local/Calculator
 RUN mvn package
-CMD ["java","-cp","target/devops_calculator-1.0-SNAPSHOT.jar","calculator.devops_calculator.App"]
+CMD ["java","-cp","target/devops_calculator-1.0-SNAPSHOT.jar","calculator.App"]
